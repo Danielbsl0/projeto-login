@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <link rel="stylesheet" href="estilos/media-query.css">
+    
 </head>
 <body>
     <main class="container">
@@ -19,17 +22,17 @@
                 </p>
                 <form action="login.php" method="post" autocomplete="on"> 
                     <div id="email">
-                        <input type="email" name="email" id="i_email" placeholder="seu e-mail" required autocomplete="email" min="10" max="64">
+                        <span id="ic_email" class="material-icons">person</span><input type="email" name="email" id="i_email" placeholder="seu e-mail" required autocomplete="email" min="10" max="64">
                     </div>
                     <div id="senha"> 
-                        <input type="password" name="senha" id="i_senha" placeholder="insira sua senha" required autocomplete="current-password" min="8" max="32">
+                        <span id="ic_senha" class="material-icons">key</span><input type="password" name="senha" id="i_senha" placeholder="insira sua senha" required autocomplete="current-password" min="8" max="32">
                     </div>
-                    <div id="enviar">
-                        <input type="submit" value="Enviar">
+                    <div>
+                        <input type="submit" value="Entrar">
                     </div>
-                    <div id="esqueci">
+                    <div>
                         <button type="button">
-                            <p>Esqueci a senha</p>
+                            <p>Esqueci a senha</p><span id="ic_esqueci" class="material-icons">email</span>
                         </button>
                     </div>
                 </form>

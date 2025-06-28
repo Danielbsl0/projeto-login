@@ -21,7 +21,7 @@ body{
 #principal {
     background-color: white;
     width: 300px;
-    min-height: 600px;
+    height: 625px;
     margin: auto;
     position: absolute;
     top: 50%;
@@ -39,7 +39,7 @@ body{
 
 #formulario > h1{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1vh;
     margin-bottom: 20px;
 }
 
@@ -55,12 +55,62 @@ div#email, div#senha{
     height: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
+    clear: both;
+    border-radius: 10px;
 }
 
 div#email > input, div#senha > input{
     text-align: center;
-    width: 75%;
+    width: 80%;
     height: 35px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-top: 2px;
+    float: right;
 } 
+
+#ic_email, #ic_senha{
+    color: white;
+    display: inline;
+    font-size: 45px;
+    margin-left: 1vw;
+}
+
+input[type="submit"]{
+    background-color: #2D6462;
+    width: 90%;
+    height: 40px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.05em;
+    border: 0px;
+    margin-bottom: 10px;
+}
+
+button{
+    background-color: white;
+    width: 90%;
+    height: 40px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    color: #2D6462;
+    font-weight: bold;
+    font-size: 1.05em;
+    border-color: #2D6462;
+}
+
+button > span, button > p{
+    display: inline-block;
+}
+
+button > p{
+    margin-right: 5px;
+}
+
+button > .material-icons{
+    font-size: 12px;
+}
+
